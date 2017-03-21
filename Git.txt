@@ -20,6 +20,12 @@ Unlike some version control software,
 
 The object format of Git's repository files uses a combination of delta encoding (storing content differences), compression and explicitly stores directory contents and version metadata objects.
 Being distributed enables significant performance benefits as well.
-For example, say a developer, Alice, makes changes to source code, adding a feature for the upcoming 2.0 release, then commits those changes with descriptive messages. She then works on a second feature and commits those changes too. Naturally these are stored as separate pieces of work in the version history.
-Alice then switches to the version 1.3 branch of the same software to fix a bug that affects only that older version. The purpose of this is to enable Alice's team to ship a bug fix release, version 1.3.1, before version 2.0 is ready.
-Alice can then return to the 2.0 branch to continue working on new features for 2.0 and all of this can occur without any network access and is therefore fast and reliable. She could even do it on an airplane. When she is ready to send all of the individually committed changes to the remote repository, Alice can "push" them in one command.
+
+For example, say a developer, Alice, makes changes to source code, adding a feature for the upcoming 2.0 release,
+	then commits those changes with descriptive messages. She then works on a second feature and commits those changes too.
+	Naturally these are stored as separate pieces of work in the version history.
+	Alice then switches to the version 1.3 branch of the same software to fix a bug that affects only that older version.
+	The purpose of this is to enable Alice's team to ship a bug fix release, version 1.3.1, before version 2.0 is ready.
+	Alice can then return to the 2.0 branch to continue working on new features for 2.0 and all of this can occur without any network access and is therefore fast and reliable.
+	She could even do it on an airplane.
+	When she is ready to send all of the individually committed changes to the remote repository, Alice can "push" them in one command.
